@@ -67,11 +67,11 @@ void loop() {
         //Serial.println("=1");
         //usbMIDI.sendNoteOn(35+s*5+d, 100, s+1);
         if (s == 3 && d == 6){
-          noteOn(0x97, d+(s*7)+48-1, 0);
+          noteOn(0x90, d+(s*7)+48-1, 0);
           //Serial.print(d+(s*7)+48-1);
         }
         else {
-          noteOn(0x97, d+(s*7)+48, 0);
+          noteOn(0x90, d+(s*7)+48, 0);
           //Serial.print(d+(s*7)+48);
         }
         //delay(100);
@@ -87,11 +87,11 @@ void loop() {
         //Serial.println("=0");
         //usbMIDI.sendNoteOff(35+s*5+d, 100, s+1);
         if (s == 3 && d == 6){
-        noteOn(0x97, d+(s*7)+48-1, 0x7F);
+        noteOn(0x90, d+(s*7)+48-1, 0x4F);
         //Serial.print(d+(s*7)+48-1);
         }
         else {
-        noteOn(0x97, d+(s*7)+48, 0x7F);
+        noteOn(0x90, d+(s*7)+48, 0x4F);
         //Serial.print(d+(s*7)+48);
         }
         //delay(100);
